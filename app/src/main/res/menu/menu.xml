@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/item_home"
+        android:title=""
+        android:icon="@drawable/ic_home"
+        android:orderInCategory="1"/>
+
+    <item android:id="@+id/item_graph"
+        android:title=""
+        android:icon="@drawable/ic_graph"
+        android:orderInCategory="2"/>
+
+    <item android:id="@+id/item_manual"
+        android:title=""
+        android:icon="@drawable/ic_help"
+        android:orderInCategory="4"/>
+</menu>

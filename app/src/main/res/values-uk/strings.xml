@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Бюджет Ліміт</string>
+
+    <!--  Buttons Names -->
+    <string name="btn_new_budget">Новий Бюджет</string>
+    <string name="cancel">Скасувати</string>
+
+    <!--  InputText hint -->
+    <string name="input_add_cost_hint">Введіть суму</string>
+    <string name="hint_budget_sum">Введіть суму бюджету</string>
+    <string name="hint_budget_days">Введіть кількість днів</string>
+
+    <!-- textView Names -->
+    <string name="text_total_sum">Загальна сума:</string>
+    <string name="text_total_days">Кількість днів:</string>
+    <string name="text_current_day">Поточний день:</string>
+    <string name="text_current_sum">Поточна сума:</string>
+    <string name="text_recomd_per_day">Рекомендовано на день:</string>
+    <string name="text_spent_per_day">Витрачено за день:</string>
+
+    <string name="text_head">Новий Бюджет</string>
+
+    <string name="date_format">dd-MM-yyyy</string>
+
+    <!--  TextView error -->
+    <string name="text_error_sum">Будь-ласка, введіть суму бюджету!</string>
+    <string name="text_error_days">Будь-ласка, введіть кількість днів!</string>
+    <!-- Graph -->
+    <string name="tv_graph_head">Щоденні витрати</string>
+
+    <!-- FAQ -->
+    <string name="q_how_it_work">Як це працює?</string>
+    <string name="text_how_it_work_1">Це дуже простий, зручний і ефективний додаток для контролю ваших витрат. З цією програмою легко побачити, чи вичерпався ваш бюджет!</string>
+    <string name="text_how_it_work_2">Просто введіть суму вашого бюджету та кількість днів.</string>
+    <string name="text_how_it_work_3">Все, що вам потрібно зробити, це просто додати всі свої витрати.</string>
+    <string name="text_how_it_work_4">Ця програма покаже вам статистику ваших витрат протягом дня та в цілому за кожен день у вашому бюджетному періоді.</string>
+    <string name="text_how_it_work_5">Крім того, додаток покаже вам, скільки рекомендовано витратити за один день.</string>
+    <string name="q_how_add_new_budget">Як додати новий бюджет?</string>
+    <string name="text_how_add_new_budget">- Натисніть кнопку Новий бюджет на початковому екрані.\n- Введіть суму грошей і кількість днів, для яких має бути розрахований бюджет.\n- Натисніть OK.</string>
+    <string name="q_why_graph_screen_empty">Чому екран щоденних витрат порожній?</string>
+    <string name="text_why_graph_screen_empty">У цьому вікні відображаються витрати за кожен день. Сума витрат поточного дня з\'явиться на початку наступного дня.</string>
+    <string name="q_aboutAdds">Чому я бачу рекламу?</string>
+    <string name="text_about_adds">Додаток абсолютно безкоштовний! Реклама розміщена таким чином, щоб не заважати комфортному використанню програми.</string>
+    <string name="q_how_use_plus_minus">Як користуватися кнопками плюс/мінус?</string>
+    <string name="text_how_use_minus">Натисніть кнопку \"-\", якщо ви хочете додати витрати.</string>
+    <string name="text_how_use_plus">Натисніть кнопку \"+\", якщо ви хочете збільшити поточну суму.</string>
+</resources>

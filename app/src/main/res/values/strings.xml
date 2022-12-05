@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Budget Limit App</string>
+    <!--  Buttons Names -->
+    <string name="btn_new_budget">New Budget</string>
+    <string name="cancel">Cancel</string>
+
+    <!--  InputText hint -->
+    <string name="input_add_cost_hint">Enter Amount</string>
+    <string name="hint_budget_sum">Enter Budget Sum</string>
+    <string name="hint_budget_days">Enter Budget Days</string>
+
+    <!-- textView Names -->
+    <string name="text_total_sum">Total Money:</string>
+    <string name="text_total_days">Days:</string>
+    <string name="text_current_day">Current Day:</string>
+    <string name="text_current_sum">Current Money:</string>
+    <string name="text_recomd_per_day">Recommended Per Day:</string>
+    <string name="text_spent_per_day">Spent Per Day:</string>
+
+    <string name="text_head">New Budget Limit</string>
+
+    <string name="date_format">dd-MM-yyyy</string>
+
+    <!--  TextView error -->
+    <string name="text_error_sum">please, enter new budget sum!</string>
+    <string name="text_error_days">please, enter days quantity for budget!</string>
+    <!-- Graph -->
+    <string name="tv_graph_head">Daily Expenses</string>
+
+    <!-- FAQ -->
+    <string name="q_how_it_work">How does it work?</string>
+    <string name="text_how_it_work_1">This is a very simple, convenient and effective application to control your expenses. With this app, it\'s easy to see if you\'re out of your budget!</string>
+    <string name="text_how_it_work_2">Just enter the amount of your budget and days quantity.</string>
+    <string name="text_how_it_work_3">All you need to do is just add every your expense.</string>
+    <string name="text_how_it_work_4">This application will show you your cost statistics during the day and in general for each day in your budget period.</string>
+    <string name="text_how_it_work_5">In addition, the application will show you how much it is recommended to spend in one day.</string>
+    <string name="q_how_add_new_budget">How Add New Budget?</string>
+    <string name="text_how_add_new_budget">- Press the button New Budget on Start Screen.\n- Enter the amount of money and the number of days for which the budget should be calculated.\n- Press Ok.</string>
+    <string name="q_why_graph_screen_empty">Why Daily Expenses Screen is Empty?</string>
+    <string name="text_why_graph_screen_empty">This window displays the expenses for each day. The amount of expenses for the current day will appear at the beginning of the next day.</string>
+    <string name="q_aboutAdds">Why am I seeing ads?</string>
+    <string name="text_about_adds">The application is absolutely free! The ads placed in such a way that it does not interfere with the comfortable use of the application.</string>
+    <string name="q_how_use_plus_minus">How to use the plus/minus buttons?</string>
+    <string name="text_how_use_minus">Press the \"-\" button if you want to add expenses.</string>
+    <string name="text_how_use_plus">Press the \"+\" button if you want to increase your current amount.</string>
+</resources>

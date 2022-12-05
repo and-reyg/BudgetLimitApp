@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_bg">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/box_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_newBudget"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="2dp"
+                android:stateListAnimator="@null"
+                android:text="@string/btn_new_budget"
+                android:textColor="#FFFFFF"
+                app:backgroundTint="@color/gold"
+                app:cornerRadius="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="198dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/logo"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/box_advertising"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@color/white"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/box_title">
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adViewHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:adSize="LARGE_BANNER"
+                app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/box_main"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/box_advertising">
+
+            <TableLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_elevation"
+                android:elevation="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TableRow
+                    android:id="@+id/row_totalSum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_elavation_tbl_row"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_totalSum"
+                        style="@style/MainBlockText"
+                        android:layout_weight="4"
+                        android:text="@string/text_total_sum" />
+
+                    <TextView
+                        android:id="@+id/tvSum_totalSum"
+                        style="@style/MainBlockSum"
+                        android:layout_weight="4" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row_totalDays"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_elavation_tbl_row">>
+
+                    <TextView
+                        android:id="@+id/tv_totalDays"
+                        style="@style/MainBlockText"
+                        android:layout_weight="4"
+                        android:text="@string/text_total_days" />
+
+                    <TextView
+                        android:id="@+id/tvSum_totalDays"
+                        style="@style/MainBlockSum"
+                        android:layout_weight="4"
+                        android:textColor="@color/black" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/row_curSum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_elavation_tbl_row">>
+
+                    <TextView
+                        android:id="@+id/tv_currentSum"
+                        style="@style/MainBlockText"
+                        android:layout_weight="4"
+                        android:text="@string/text_current_sum" />
+
+                    <TextView
+                        android:id="@+id/tvSum_curSum"
+                        style="@style/MainBlockSum"
+                        android:layout_weight="4" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row_recomdSum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_elavation_tbl_row">>
+
+                    <TextView
+                        android:id="@+id/tv_recomdSumPerDay"
+                        style="@style/MainBlockText"
+                        android:layout_width="205dp"
+                        android:layout_weight="2"
+                        android:text="@string/text_recomd_per_day" />
+
+                    <TextView
+                        android:id="@+id/tvSum_recomdPerDay"
+                        style="@style/MainBlockSum"
+                        android:layout_weight="8" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row_spentPerDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_elavation_tbl_row">>
+
+
+                    <TextView
+                        android:id="@+id/tv_spentPerDay"
+                        style="@style/MainBlockText"
+                        android:layout_weight="4"
+                        android:text="@string/text_spent_per_day" />
+
+                    <TextView
+                        android:id="@+id/tvSum_spentPerDay"
+                        style="@style/MainBlockSum"
+                        android:layout_weight="4"
+                        android:textColor="@color/red" />
+                </TableRow>
+
+
+            </TableLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/box_spentPerDay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="9dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/box_addCost"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/box_main">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_home"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@color/white"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:listitem="@layout/layout_home_cardview" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/box_addCost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@color/grey_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/box_spentPerDay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/green"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <EditText
+                    android:id="@+id/et_addCost"
+                    android:layout_width="169dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/selector_et_input"
+                    android:textColor="@color/black"
+                    android:drawableStart="@drawable/selector_alert_icon_sum"
+                    android:drawablePadding="5dp"
+                    android:ems="10"
+                    android:gravity="center|start"
+                    android:hint="@string/input_add_cost_hint"
+                    android:inputType="numberDecimal"
+                    android:minHeight="50dp"
+                    android:padding="5dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_minus"
+                    android:layout_width="57dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/shape_btn_circle"
+                    android:contentDescription="minus"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textSize="30dp"
+                    app:backgroundTint="@color/gold" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_plus"
+                    android:layout_width="57dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/shape_btn_circle"
+                    android:contentDescription="plus"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textSize="30sp"
+                    app:backgroundTint="#41CF59" />
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
